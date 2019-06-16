@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentTableViewCell" rowHeight="110" id="KGk-i7-Jjw" customClass="CommentTableViewCell" customModule="AnDi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8S-0s-XXz">
+                        <rect key="frame" x="0.0" y="0.0" width="399" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="traffic_light" translatesAutoresizingMaskIntoConstraints="NO" id="PZF-On-Oxd">
+                                <rect key="frame" x="8" y="8" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="cVp-7z-lw0"/>
+                                    <constraint firstAttribute="width" secondItem="PZF-On-Oxd" secondAttribute="height" multiplier="1:1" id="nic-ur-ceZ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxt-yE-lJr" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="48" y="14" width="120" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="npf-JG-Sb8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                        <color key="value" red="0.22963038089999999" green="0.1144193038" blue="0.56031686069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                        <color key="value" red="0.22963038089999999" green="0.1144193038" blue="0.56031686069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                        <color key="value" red="0.99537497760000004" green="0.97267764810000001" blue="0.62792921069999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="updateOnTouch" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CO-Vj-M5L">
+                                <rect key="frame" x="176" y="0.0" width="208" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="J4L-fD-uJw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIq-CR-Jqq">
+                                <rect key="frame" x="0.0" y="48" width="399" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.45882352939999999" green="0.66274509800000003" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42352941179999998" green="0.61568627450000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oIq-CR-Jqq" firstAttribute="height" secondItem="4CO-Vj-M5L" secondAttribute="height" id="GS8-Ur-wQP"/>
+                            <constraint firstItem="PZF-On-Oxd" firstAttribute="leading" secondItem="d8S-0s-XXz" secondAttribute="leading" constant="8" id="Mz3-7u-1P2"/>
+                            <constraint firstAttribute="trailing" secondItem="4CO-Vj-M5L" secondAttribute="trailing" constant="15" id="Pb9-oo-0pd"/>
+                            <constraint firstItem="bxt-yE-lJr" firstAttribute="centerY" secondItem="PZF-On-Oxd" secondAttribute="centerY" id="TJN-h8-6U3"/>
+                            <constraint firstItem="oIq-CR-Jqq" firstAttribute="leading" secondItem="d8S-0s-XXz" secondAttribute="leading" id="TeI-zD-ZEl"/>
+                            <constraint firstAttribute="trailing" secondItem="oIq-CR-Jqq" secondAttribute="trailing" id="U6G-vf-bmW"/>
+                            <constraint firstItem="oIq-CR-Jqq" firstAttribute="top" secondItem="4CO-Vj-M5L" secondAttribute="bottom" id="Vdj-eT-plK"/>
+                            <constraint firstItem="4CO-Vj-M5L" firstAttribute="top" secondItem="d8S-0s-XXz" secondAttribute="top" id="Xi3-uM-4WD"/>
+                            <constraint firstItem="4CO-Vj-M5L" firstAttribute="leading" secondItem="bxt-yE-lJr" secondAttribute="trailing" constant="8" id="YaJ-nG-EG2"/>
+                            <constraint firstAttribute="bottom" secondItem="oIq-CR-Jqq" secondAttribute="bottom" id="ZgW-JB-CzZ"/>
+                            <constraint firstItem="bxt-yE-lJr" firstAttribute="leading" secondItem="PZF-On-Oxd" secondAttribute="trailing" constant="8" id="dQc-Xp-lbW"/>
+                            <constraint firstItem="4CO-Vj-M5L" firstAttribute="centerY" secondItem="bxt-yE-lJr" secondAttribute="centerY" id="tY5-K2-OEX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d8S-0s-XXz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D2u-hc-yEr"/>
+                    <constraint firstItem="d8S-0s-XXz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="TDG-L2-2as"/>
+                    <constraint firstAttribute="trailing" secondItem="d8S-0s-XXz" secondAttribute="trailing" id="W2e-9j-oog"/>
+                    <constraint firstAttribute="bottom" secondItem="d8S-0s-XXz" secondAttribute="bottom" id="aSZ-Ch-rPa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="commentBackgroundView" destination="d8S-0s-XXz" id="Kpa-K1-Lgg"/>
+                <outlet property="commentImageView" destination="PZF-On-Oxd" id="6Cd-Qo-S2V"/>
+                <outlet property="commentTitleLabel" destination="4CO-Vj-M5L" id="unc-Li-MoC"/>
+                <outlet property="detailTitleLabel" destination="oIq-CR-Jqq" id="PMi-Jf-26b"/>
+                <outlet property="starRateView" destination="bxt-yE-lJr" id="znB-RL-RUu"/>
+            </connections>
+            <point key="canvasLocation" x="29.710144927536234" y="71.651785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="traffic_light" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>

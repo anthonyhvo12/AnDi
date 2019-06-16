@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - Cosmos (19.0.3)
+  - REFrostedViewController (2.4.8)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-beta.5)
+  - Cosmos (~> 19.0)
+  - REFrostedViewController (~> 2.4)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Cosmos
+    - REFrostedViewController
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 920caff9a06590d5514f769a0ca3dbe5aab62683
+
+COCOAPODS: 1.5.3

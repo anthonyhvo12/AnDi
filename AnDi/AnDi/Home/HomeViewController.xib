@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="AnDi" customModuleProvider="target">
+            <connections>
+                <outlet property="mapView" destination="Sfk-fT-ojl" id="h7W-JO-6Jb"/>
+                <outlet property="menuButton" destination="IEF-qx-yYR" id="Eyv-f5-IYH"/>
+                <outlet property="myLocationButton" destination="5N0-7w-jm9" id="vqf-Lo-ug6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Sfk-fT-ojl">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEF-qx-yYR">
+                    <rect key="frame" x="16" y="60" width="44" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Kfu-8g-nes"/>
+                        <constraint firstAttribute="width" constant="44" id="sr7-ye-ZOT"/>
+                    </constraints>
+                    <state key="normal" image="menu"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5N0-7w-jm9">
+                    <rect key="frame" x="350" y="798" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="VpF-Xx-jTH"/>
+                        <constraint firstAttribute="width" constant="48" id="q98-iG-Xjp"/>
+                    </constraints>
+                    <state key="normal" image="mylocation"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.42352941179999998" green="0.61568627450000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sfk-fT-ojl" secondAttribute="trailing" id="7tu-wR-B2g"/>
+                <constraint firstItem="IEF-qx-yYR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="G40-Mg-Tok"/>
+                <constraint firstItem="Sfk-fT-ojl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="O2E-Ii-mzm"/>
+                <constraint firstItem="Sfk-fT-ojl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="kHG-We-yii"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5N0-7w-jm9" secondAttribute="trailing" constant="16" id="rVo-xJ-nB8"/>
+                <constraint firstItem="IEF-qx-yYR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="shy-eD-Zo6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5N0-7w-jm9" secondAttribute="bottom" constant="16" id="sjk-Wj-d1F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Sfk-fT-ojl" secondAttribute="bottom" id="yBW-1r-Hct"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="menu" width="22" height="22"/>
+        <image name="mylocation" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>
